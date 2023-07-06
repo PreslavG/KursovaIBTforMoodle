@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    background-color: rgb(227, 241, 238);
+    overflow: hidden;
+}
+
+header {
+    background-color:rgb(227, 241, 238);
+    width: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0; /* Adjust the margin-bottom value as needed */
+}
+
+.logo-home img {
+    width: 150px;
+    position: absolute;
+    z-index: 2;
+}
+.logo img {
+    width: 150px;
+}
+.not-working{
+
+    height: 100vh;
+    background-image: url(images/pexels-albert-white-361104.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+.circle {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+  
+  .text {
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px; /* adjust the font size of the text */
+    color:white; /* adjust the color of the text */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    z-index: 2;
+    
+  }
+  
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 4px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+main {
+    padding: 0;
+}
+  
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 4px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.image-card {
+    width: 300px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 87%;
+    height: 92%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-overlay h2,
+.image-overlay p {
+    margin: 0;
+}
+
+.image-card:hover .image-overlay {
+    opacity: 1;
+}
+.other-places {
+    cursor: pointer;
+    position:absolute;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    bottom: 0;
+    height: 15vh;
+    width: 100%;
+    background-color:transparent;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+
+  
+  .main-article-container{
+    display: flex;
+    gap: 5rem;
+    padding:2rem 7rem;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+.text-image-container{
+    gap: 12rem;
+    flex-direction: row;
+    display: none;
+    line-height: 1.5;
+}
+.visible{
+    gap: 12rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.text-image-container img{
+    max-width: 300px;
+    max-height: 500px;
+}
+.text-image-container text{
+    max-width: 300px;
+    
+}
+.visible img{
+    max-width: 300px;
+    max-height: 500px;
+}
+.visible text{
+    max-width: 300px;
+}
+
+  /* arrows */
+.arrow-container{
+
+    display: flex;
+    gap: 5rem;
+    
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    
+ 
+    
+ }
+ .arrow-container > img{
+    cursor: pointer;
+     max-width: 50px;
+     
+ 
+ }  
+  .container {
+    background-color: whitesmoke;
+    height: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: url(images/pexels-albert-white-361104.jpg);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    height: 120px;
+  }
+  
+  .form-group button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form-group button:hover {
+    background-color: #45a049;
+  }
+  
+  
+
+ 
+
